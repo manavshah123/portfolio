@@ -53,14 +53,13 @@ export interface PortfolioData {
     description: string
     color: string
   }>
-  aiProjects: {
+  aiProjects: Array<{
+    icon: string
     title: string
-    sections: Array<{
-      heading: string
-      details: string[]
-      techs: string[]
-    }>
-  }
+    gradient: string
+    techs: string[]
+    highlights: string[]
+  }>
   projects: Array<{
     title: string
     techs: string[]
@@ -68,7 +67,7 @@ export interface PortfolioData {
     highlights: string[]
   }>
   technicalSkills: Array<{
-    category: string
+    title: string
     icon: string
     skills: Array<{
       name: string
