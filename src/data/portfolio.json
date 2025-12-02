@@ -1,0 +1,331 @@
+{
+  "personalInfo": {
+    "name": "Manav Shah",
+    "title": "Software Engineer | Full Stack & Multi-Platform",
+    "photo": "/profile.jpg",
+    "contacts": [
+      {
+        "type": "email",
+        "value": "manav.march12@gmail.com",
+        "href": "mailto:manav.march12@gmail.com"
+      },
+      {
+        "type": "phone",
+        "value": "+91 7016455160",
+        "href": "tel:+917016455160"
+      },
+      {
+        "type": "linkedin",
+        "value": "LinkedIn",
+        "href": "https://linkedin.com/in/manavushah"
+      },
+      {
+        "type": "github",
+        "value": "GitHub",
+        "href": "https://github.com/manavshah123"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "icon": "Code2",
+      "value": 3.5,
+      "label": "Years Experience",
+      "suffix": "+"
+    },
+    {
+      "icon": "GitBranch",
+      "value": 15,
+      "label": "Projects Completed",
+      "suffix": "+"
+    },
+    {
+      "icon": "Award",
+      "value": 18,
+      "label": "Technologies Mastered",
+      "suffix": "+"
+    },
+    {
+      "icon": "Rocket",
+      "value": 96,
+      "label": "Client Satisfaction",
+      "suffix": "%"
+    }
+  ],
+  "skillProgress": [
+    {
+      "name": "Java & Spring Boot",
+      "level": 95,
+      "color": "from-green-500 to-emerald-600"
+    },
+    {
+      "name": "React & Angular",
+      "level": 90,
+      "color": "from-blue-500 to-cyan-600"
+    },
+    {
+      "name": "Kotlin & Swift",
+      "level": 85,
+      "color": "from-purple-500 to-pink-600"
+    },
+    {
+      "name": "Docker & DevOps",
+      "level": 88,
+      "color": "from-sky-500 to-blue-600"
+    },
+    {
+      "name": "Database & Solr",
+      "level": 92,
+      "color": "from-orange-500 to-red-600"
+    },
+    {
+      "name": "Testing & QA",
+      "level": 87,
+      "color": "from-yellow-500 to-amber-600"
+    },
+    {
+      "name": "AI Agents Development",
+      "level": 85,
+      "color": "from-violet-500 to-purple-600"
+    },
+    {
+      "name": "LangChain / LangGraph",
+      "level": 80,
+      "color": "from-emerald-500 to-teal-600"
+    },
+    {
+      "name": "OpenAI APIs",
+      "level": 85,
+      "color": "from-cyan-500 to-blue-600"
+    },
+    {
+      "name": "Prompt Engineering",
+      "level": 88,
+      "color": "from-pink-500 to-rose-600"
+    },
+    {
+      "name": "RAG Systems",
+      "level": 82,
+      "color": "from-indigo-500 to-violet-600"
+    },
+    {
+      "name": "Vector Databases",
+      "level": 78,
+      "color": "from-fuchsia-500 to-purple-600"
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Tech Computer Engineering",
+      "institution": "U.V.Patel college of engineering, Ganpat University",
+      "location": "Gujarat, India",
+      "period": "2019 - 2022"
+    },
+    {
+      "degree": "Diploma in Computer Engineering",
+      "institution": "B.S.Patel Polytechnic, Ganpat University",
+      "location": "Gujarat, India",
+      "period": "2016 - 2019"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Wishtree Technologies LLP",
+      "position": "Software Engineer",
+      "location": "Pune, India",
+      "period": "Jan 2022 - Present",
+      "responsibilities": [
+        "**Leadership & Mentorship:** Led the development team, overseeing task assignment, monitoring progress, and ensuring seamless collaboration across project phases.",
+        "**DevOps Integration:** Integrated **Docker, Jenkins, Apache Solr, and Snyk** to establish robust CI/CD and security scanning, significantly boosting deployment efficiency and code quality.",
+        "**Modernization:** Successfully drove the migration of core projects to updated **Java and Spring Boot** versions, resulting in performance gains and reduced technical debt.",
+        "**Client & Production Support:** Served as a primary contact for production issues, collaborating directly with clients to provide prompt resolutions and maintain system uptime.",
+        "**Quality Assurance:** Developed and maintained comprehensive end-to-end UI automation test suite using **Selenium**, reducing manual testing effort by an estimated 40%."
+      ]
+    }
+  ],
+  "achievements": [
+    {
+      "icon": "Trophy",
+      "title": "Team Leader",
+      "description": "Led development teams across multiple projects",
+      "color": "from-yellow-500 to-orange-500"
+    },
+    {
+      "icon": "Target",
+      "title": "Full Stack Expert",
+      "description": "Mastered both frontend and backend technologies",
+      "color": "from-blue-500 to-cyan-500"
+    },
+    {
+      "icon": "Zap",
+      "title": "DevOps Pioneer",
+      "description": "Implemented CI/CD pipelines from scratch",
+      "color": "from-purple-500 to-pink-500"
+    },
+    {
+      "icon": "Star",
+      "title": "Multi-Platform Dev",
+      "description": "5+ platforms including iOS, Android, CTV",
+      "color": "from-green-500 to-teal-500"
+    },
+    {
+      "icon": "Shield",
+      "title": "Quality Champion",
+      "description": "40% reduction in manual testing effort",
+      "color": "from-red-500 to-rose-500"
+    },
+    {
+      "icon": "Sparkles",
+      "title": "Innovation Driver",
+      "description": "Modernized legacy systems to latest tech",
+      "color": "from-indigo-500 to-violet-500"
+    },
+    {
+      "icon": "Brain",
+      "title": "AI Agent Developer",
+      "description": "Building intelligent autonomous agents",
+      "color": "from-violet-500 to-fuchsia-500"
+    },
+    {
+      "icon": "Bot",
+      "title": "LLM Integration",
+      "description": "Expert in OpenAI & LangChain ecosystems",
+      "color": "from-cyan-500 to-blue-500"
+    }
+  ],
+  "aiProjects": [
+    {
+      "icon": "Brain",
+      "title": "AI Agent Development",
+      "gradient": "from-violet-500 to-purple-600",
+      "techs": ["LangChain", "OpenAI", "Python", "RAG"],
+      "highlights": [
+        "**Autonomous Agents:** Building intelligent agents that can reason, plan, and execute complex tasks with minimal human intervention.",
+        "**LangChain Integration:** Leveraging LangChain and LangGraph for building sophisticated agent workflows with memory and tool usage.",
+        "**RAG Systems:** Implementing Retrieval-Augmented Generation for context-aware AI applications with vector databases.",
+        "**Multi-Agent Systems:** Designing collaborative agent architectures where multiple AI agents work together to solve complex problems."
+      ]
+    },
+    {
+      "icon": "Bot",
+      "title": "LLM-Powered Applications",
+      "gradient": "from-cyan-500 to-blue-600",
+      "techs": ["OpenAI APIs", "Prompt Engineering", "Vector DBs", "Embeddings"],
+      "highlights": [
+        "**API Integration:** Expert integration of OpenAI GPT models, Claude, and other LLM providers for production applications.",
+        "**Prompt Engineering:** Crafting optimized prompts and system instructions for reliable and consistent AI outputs.",
+        "**Vector Databases:** Working with Pinecone, Chroma, and FAISS for semantic search and knowledge retrieval.",
+        "**Fine-tuning & Optimization:** Experience with model fine-tuning and response optimization for specific use cases."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Enterprise eProcurement System",
+      "techs": ["Spring Boot", "Angular 11", "Hibernate/JPA", "MySQL", "Docker", "Jenkins", "Apache Solr", "Selenium", "Snyk"],
+      "period": "Aug 2023 - Present | Role: Full-Stack Developer & Team Lead",
+      "highlights": [
+        "**Leadership & Collaboration:** Led the development team, assigning tasks, monitoring progress, and ensuring seamless collaboration across project phases. Worked directly with clients for production issue resolution.",
+        "**Full-Stack Development:** Built complex business logic with **Java/Spring Boot** backend and reactive UIs with **Angular 11**, using **IntelliJ IDEA** as primary development environment.",
+        "**DevOps Integration:** Expanded technical expertise by integrating **Docker, Jenkins, Apache Solr, and Snyk** to boost project efficiency, security scanning, and deployment automation.",
+        "**Quality Assurance:** Developed end-to-end UI automation test cases using **Selenium**, strengthening testing capabilities and reducing manual testing effort.",
+        "**Migration & Modernization:** Successfully contributed to migrating the project to updated **Java and Spring Boot** versions, performing debugging and efficiently resolving development and testing phase issues.",
+        "**Data Management:** Managed persistence layer with **Hibernate/JPA** and **MySQL**, implementing **Apache Solr** for high-performance search with sub-second query times."
+      ]
+    },
+    {
+      "title": "IAS OMID Multi-Platform Test Harness",
+      "techs": ["Java", "Kotlin", "Swift", "Bright Script", "HTML/CSS/JS", "OMID Library", "Android/iOS", "CTV"],
+      "period": "July 2022 - Aug 2023 | Role: Multi-Platform Developer",
+      "highlights": [
+        "**Multi-Platform Development:** Developed applications for **Roku TV, Amazon Fire TV, Apple TV, Android mobile, and iPhone** devices using platform-specific technologies and tools.",
+        "**Technology Stack:** Used **Java/Kotlin** for Android & Fire TV, **Swift** for Apple TV & iOS, **Bright Script** for Roku TV, and **HTML/CSS/JavaScript** for Samsung TV (Tixen Studio).",
+        "**Ad Tech Compliance:** Implemented the industry-mandated **OMID Library** for event tracking, log generation, and performance measurement across all platforms.",
+        "**Advanced Features:** Implemented **XML parsing, network calls, multiple ad types** and scenarios, integrated **Charles** for debugging and network analysis.",
+        "**Development Tools:** Utilized **Android Studio, Xcode, Tixen Studio, Visual Studio Code** and **Charles** for comprehensive cross-platform development and debugging."
+      ]
+    }
+  ],
+  "technicalSkills": [
+    {
+      "title": "Languages & Frontend",
+      "icon": "Terminal",
+      "skills": [
+        { "name": "Java", "level": 95, "color": "from-orange-500 to-red-600" },
+        { "name": "Kotlin", "level": 85, "color": "from-purple-500 to-indigo-600" },
+        { "name": "Angular", "level": 90, "color": "from-red-500 to-pink-600" },
+        { "name": "Swift", "level": 80, "color": "from-orange-400 to-amber-600" },
+        { "name": "JavaScript / HTML / CSS", "level": 92, "color": "from-yellow-500 to-orange-500" },
+        { "name": "Bright Script", "level": 75, "color": "from-purple-400 to-violet-600" },
+        { "name": "Bootstrap", "level": 88, "color": "from-indigo-500 to-purple-600" },
+        { "name": "XML", "level": 85, "color": "from-green-500 to-teal-600" }
+      ]
+    },
+    {
+      "title": "Backend & Frameworks",
+      "icon": "Server",
+      "skills": [
+        { "name": "Spring Boot", "level": 95, "color": "from-green-500 to-emerald-600" },
+        { "name": "Spring", "level": 93, "color": "from-green-400 to-teal-600" },
+        { "name": "Hibernate / JPA", "level": 90, "color": "from-teal-500 to-cyan-600" },
+        { "name": "REST Web Services", "level": 94, "color": "from-blue-500 to-indigo-600" },
+        { "name": "Servlets", "level": 88, "color": "from-orange-500 to-red-500" }
+      ]
+    },
+    {
+      "title": "Data & Search",
+      "icon": "Database",
+      "skills": [
+        { "name": "MySQL (RDBMS)", "level": 92, "color": "from-blue-600 to-cyan-600" },
+        { "name": "MongoDB (NoSQL)", "level": 85, "color": "from-green-600 to-lime-600" },
+        { "name": "Apache Solr", "level": 88, "color": "from-red-600 to-orange-600" }
+      ]
+    },
+    {
+      "title": "CI/CD & DevOps",
+      "icon": "Zap",
+      "skills": [
+        { "name": "Docker", "level": 88, "color": "from-blue-400 to-sky-600" },
+        { "name": "Jenkins", "level": 85, "color": "from-gray-500 to-slate-600" },
+        { "name": "Microsoft Azure", "level": 80, "color": "from-sky-500 to-blue-600" },
+        { "name": "GitHub", "level": 90, "color": "from-gray-600 to-slate-700" }
+      ]
+    },
+    {
+      "title": "Testing & Security",
+      "icon": "ShieldCheck",
+      "skills": [
+        { "name": "Selenium (UI Auto)", "level": 90, "color": "from-green-500 to-teal-600" },
+        { "name": "JUnit / Mockito", "level": 88, "color": "from-orange-500 to-red-600" },
+        { "name": "Snyk", "level": 82, "color": "from-purple-500 to-pink-600" },
+        { "name": "Selenium Grid", "level": 75, "color": "from-lime-500 to-green-600" }
+      ]
+    },
+    {
+      "title": "Tools & IDEs",
+      "icon": "Terminal",
+      "skills": [
+        { "name": "IntelliJ IDEA", "level": 95, "color": "from-purple-500 to-pink-500" },
+        { "name": "Android Studio", "level": 85, "color": "from-green-500 to-emerald-500" },
+        { "name": "Xcode", "level": 80, "color": "from-blue-500 to-cyan-500" },
+        { "name": "Visual Studio Code", "level": 92, "color": "from-blue-600 to-indigo-600" },
+        { "name": "Eclipse", "level": 85, "color": "from-indigo-600 to-purple-600" },
+        { "name": "Postman", "level": 90, "color": "from-orange-500 to-red-500" },
+        { "name": "Charles (Debugging)", "level": 80, "color": "from-teal-500 to-cyan-500" }
+      ]
+    },
+    {
+      "title": "AI & Machine Learning",
+      "icon": "Brain",
+      "skills": [
+        { "name": "AI Agents Development", "level": 85, "color": "from-violet-500 to-purple-600" },
+        { "name": "LangChain / LangGraph", "level": 80, "color": "from-emerald-500 to-teal-600" },
+        { "name": "OpenAI APIs", "level": 85, "color": "from-cyan-500 to-blue-600" },
+        { "name": "Prompt Engineering", "level": 88, "color": "from-pink-500 to-rose-600" },
+        { "name": "RAG Systems", "level": 82, "color": "from-indigo-500 to-violet-600" },
+        { "name": "Vector Databases", "level": 78, "color": "from-fuchsia-500 to-purple-600" }
+      ]
+    }
+  ]
+}
+
