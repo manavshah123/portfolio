@@ -202,18 +202,18 @@ function App() {
 
         {/* Stats Dashboard - Full Width */}
         <div className="max-w-7xl mx-auto mb-10">
-          <Stats />
+          <Stats statsData={portfolioData.stats} />
         </div>
 
         {/* Main Content */}
         <main className="max-w-7xl mx-auto">
           {/* Mobile: Single Column */}
           <div className="lg:hidden space-y-8">
-            <Education />
-            <Experience />
-            <SkillProgress />
-            <Achievements />
-            <AIProjects />
+            <Education educationData={portfolioData.education} />
+            <Experience experiences={portfolioData.experience} />
+            <SkillProgress skills={portfolioData.skillProgress} />
+            <Achievements achievementsData={portfolioData.achievements} />
+            <AIProjects aiProjectsData={portfolioData.aiProjects} />
             <div>
               <h2 className={`text-3xl font-bold mb-6 ${
                 theme === 'dark' ? 'text-orange-400' : 'text-orange-600'
@@ -221,7 +221,7 @@ function App() {
                 💼 Key Projects
               </h2>
               <div className="space-y-6">
-                <Projects />
+                <Projects projects={portfolioData.projects} />
               </div>
             </div>
             <div>
@@ -230,7 +230,7 @@ function App() {
               }`}>
                 🎯 Technical Proficiency
               </h2>
-              <Skills />
+              <Skills technicalSkillsData={portfolioData.technicalSkills} />
             </div>
           </div>
 
@@ -238,8 +238,8 @@ function App() {
           <div className="hidden lg:grid lg:grid-cols-10 gap-10">
             {/* Left Sidebar - 30% (3 cols) - Quick Info */}
             <div className="lg:col-span-3 space-y-8">
-              <Education />
-              <SkillProgress />
+              <Education educationData={portfolioData.education} />
+              <SkillProgress skills={portfolioData.skillProgress} />
               
               {/* Technical Proficiency - Collapsible */}
               <div>
@@ -248,20 +248,20 @@ function App() {
                 }`}>
                   🎯 Technical Proficiency
                 </h2>
-                <Skills />
+                <Skills technicalSkillsData={portfolioData.technicalSkills} />
               </div>
             </div>
 
             {/* Right Main Content - 70% (7 cols) - Detailed Info */}
             <div className="lg:col-span-7 space-y-8">
               {/* Experience - Full Width in Main Area */}
-              <Experience />
+              <Experience experiences={portfolioData.experience} />
               
               {/* Achievements */}
-              <Achievements />
+              <Achievements achievementsData={portfolioData.achievements} />
               
               {/* AI Projects */}
-              <AIProjects />
+              <AIProjects aiProjectsData={portfolioData.aiProjects} />
               
               {/* Projects Section with Collapsible */}
               <div>
@@ -271,7 +271,7 @@ function App() {
                   💼 Key Projects
                 </h2>
                 <div className="space-y-6">
-                  <Projects />
+                  <Projects projects={portfolioData.projects} />
                 </div>
               </div>
             </div>

@@ -1,9 +1,16 @@
-import portfolioData from '../data/portfolio.json'
 import { useTheme } from '../hooks/useTheme'
 
-const Education = () => {
+interface EducationProps {
+  educationData: Array<{
+    degree: string
+    institution: string
+    location: string
+    period: string
+  }>
+}
+
+const Education = ({ educationData }: EducationProps) => {
   const theme = useTheme()
-  const educationData = portfolioData.education
   
   return (
     <div className={`p-6 rounded-xl shadow-2xl ${

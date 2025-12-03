@@ -1,7 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { Terminal, Server, Database, Zap, ShieldCheck, Brain, ChevronDown, Wrench } from 'lucide-react'
 import { useState } from 'react'
-import portfolioData from '../data/portfolio.json'
 import { useTheme } from '../hooks/useTheme'
 
 // Map Tailwind gradient classes to actual colors
@@ -58,7 +57,19 @@ const getGradientColors = (colorClass: string): { from: string; to: string } => 
   return { from: '#f97316', to: '#c2410c' }
 }
 
-const Skills = () => {
+interface SkillsProps {
+  technicalSkillsData: Array<{
+    category: string
+    icon: string
+    skills: Array<{
+      name: string
+      level: number
+      color: string
+    }>
+  }>
+}
+
+const Skills = ({ technicalSkillsData }: SkillsProps) => {
   const theme = useTheme()
   const [expandedGroup, setExpandedGroup] = useState<number | null>(null)
   
@@ -69,12 +80,13 @@ const Skills = () => {
     Zap,
     ShieldCheck,
     Brain,
-    Tool: Wrench
+    Tool: Wrench,
+    Wrench
   }
   
-  const skillsData = portfolioData.technicalSkills.map((group: any) => ({
+  const skillsData = technicalSkillsData.map((group: any) => ({
     ...group,
-    icon: iconMap[group.icon]
+    icon: iconMap[group.icon] || Terminal // Fallback to Terminal
   }))
 
   return (

@@ -1,11 +1,14 @@
 import { motion } from 'framer-motion'
-import portfolioData from '../data/portfolio.json'
 import { useTheme } from '../hooks/useTheme'
 
 interface Skill {
   name: string
   level: number
   color: string
+}
+
+interface SkillProgressProps {
+  skills: Skill[]
 }
 
 // Map Tailwind gradient classes to actual colors
@@ -50,9 +53,8 @@ const getGradientColors = (colorClass: string): { from: string; to: string } => 
   return { from: '#f97316', to: '#c2410c' }
 }
 
-const SkillProgress = () => {
+const SkillProgress = ({ skills }: SkillProgressProps) => {
   const theme = useTheme()
-  const skills: Skill[] = portfolioData.skillProgress
 
   return (
     <motion.section

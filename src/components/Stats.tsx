@@ -2,7 +2,6 @@ import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { Code2, GitBranch, Award, Rocket } from 'lucide-react'
 import { useTheme } from '../hooks/useTheme'
-import portfolioData from '../data/portfolio.json'
 
 interface StatCardProps {
   icon: React.ElementType
@@ -94,7 +93,16 @@ const StatCard = ({ icon: Icon, value, label, suffix = '', delay }: StatCardProp
   )
 }
 
-const Stats = () => {
+interface StatsProps {
+  statsData: Array<{
+    icon: string
+    value: number
+    label: string
+    suffix: string
+  }>
+}
+
+const Stats = ({ statsData }: StatsProps) => {
   const theme = useTheme()
 
   const iconMap: Record<string, React.ElementType> = {
@@ -104,9 +112,9 @@ const Stats = () => {
     Rocket
   }
   
-  const stats = portfolioData.stats.map((stat: any) => ({
+  const stats = statsData.map((stat: any) => ({
     ...stat,
-    icon: iconMap[stat.icon as keyof typeof iconMap]
+    icon: iconMap[stat.icon as keyof typeof iconMap] || Code2 // Fallback to Code2
   }))
 
   return (

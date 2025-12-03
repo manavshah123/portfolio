@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
 import { Trophy, Target, Zap, Star, Shield, Sparkles, Brain, Bot } from 'lucide-react'
-import portfolioData from '../data/portfolio.json'
 import { useTheme } from '../hooks/useTheme'
 
 // Map Tailwind gradient classes to actual colors
@@ -28,7 +27,16 @@ const getGradientColors = (colorClass: string): { from: string; to: string } => 
   return { from: '#f97316', to: '#ea580c' }
 }
 
-const Achievements = () => {
+interface AchievementsProps {
+  achievementsData: Array<{
+    icon: string
+    title: string
+    description: string
+    color: string
+  }>
+}
+
+const Achievements = ({ achievementsData }: AchievementsProps) => {
   const theme = useTheme()
   
   const iconMap: Record<string, React.ElementType> = {
@@ -42,9 +50,9 @@ const Achievements = () => {
     Bot
   }
   
-  const achievements = portfolioData.achievements.map((achievement: any) => ({
+  const achievements = achievementsData.map((achievement: any) => ({
     ...achievement,
-    icon: iconMap[achievement.icon]
+    icon: iconMap[achievement.icon] || Star // Fallback to Star if icon not found
   }))
 
   return (

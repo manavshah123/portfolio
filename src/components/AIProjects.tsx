@@ -1,12 +1,20 @@
 import { motion } from 'framer-motion'
 import { Brain, Bot, Sparkles, Zap } from 'lucide-react'
-import portfolioData from '../data/portfolio.json'
 import { useTheme } from '../hooks/useTheme'
 
-const AIProjects = () => {
+interface AIProjectsProps {
+  aiProjectsData: {
+    title: string
+    sections: Array<{
+      heading: string
+      details: string[]
+      techs: string[]
+    }>
+  }
+}
+
+const AIProjects = ({ aiProjectsData }: AIProjectsProps) => {
   const theme = useTheme()
-  
-  const aiProjectsData = portfolioData.aiProjects
 
   return (
     <motion.section

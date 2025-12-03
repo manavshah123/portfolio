@@ -1,9 +1,17 @@
-import portfolioData from '../data/portfolio.json'
 import { useTheme } from '../hooks/useTheme'
 
-const Experience = () => {
+interface ExperienceProps {
+  experiences: Array<{
+    company: string
+    position: string
+    location: string
+    period: string
+    responsibilities: string[]
+  }>
+}
+
+const Experience = ({ experiences }: ExperienceProps) => {
   const theme = useTheme()
-  const experiences = portfolioData.experience
 
   const parseText = (text: string) => {
     const parts = text.split(/(\*\*.*?\*\*)/g)

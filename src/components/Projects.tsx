@@ -1,13 +1,20 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { FolderGit2, ChevronDown } from 'lucide-react'
 import { useState } from 'react'
-import portfolioData from '../data/portfolio.json'
 import { useTheme } from '../hooks/useTheme'
 
-const Projects = () => {
+interface ProjectsProps {
+  projects: Array<{
+    title: string
+    techs: string[]
+    period: string
+    highlights: string[]
+  }>
+}
+
+const Projects = ({ projects }: ProjectsProps) => {
   const theme = useTheme()
   const [expandedProject, setExpandedProject] = useState<number | null>(0)
-  const projects = portfolioData.projects
 
   const techMap: Record<string, { icon: string; color: string; bg: string }> = {
     'Java': { icon: '☕', color: 'text-orange-500', bg: 'bg-orange-500/10' },
