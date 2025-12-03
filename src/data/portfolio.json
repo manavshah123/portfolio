@@ -193,32 +193,31 @@
       "color": "from-cyan-500 to-blue-500"
     }
   ],
-  "aiProjects": [
-    {
-      "icon": "Brain",
-      "title": "AI Agent Development",
-      "gradient": "from-violet-500 to-purple-600",
-      "techs": ["LangChain", "OpenAI", "Python", "RAG"],
-      "highlights": [
-        "**Autonomous Agents:** Building intelligent agents that can reason, plan, and execute complex tasks with minimal human intervention.",
-        "**LangChain Integration:** Leveraging LangChain and LangGraph for building sophisticated agent workflows with memory and tool usage.",
-        "**RAG Systems:** Implementing Retrieval-Augmented Generation for context-aware AI applications with vector databases.",
-        "**Multi-Agent Systems:** Designing collaborative agent architectures where multiple AI agents work together to solve complex problems."
-      ]
-    },
-    {
-      "icon": "Bot",
-      "title": "LLM-Powered Applications",
-      "gradient": "from-cyan-500 to-blue-600",
-      "techs": ["OpenAI APIs", "Prompt Engineering", "Vector DBs", "Embeddings"],
-      "highlights": [
-        "**API Integration:** Expert integration of OpenAI GPT models, Claude, and other LLM providers for production applications.",
-        "**Prompt Engineering:** Crafting optimized prompts and system instructions for reliable and consistent AI outputs.",
-        "**Vector Databases:** Working with Pinecone, Chroma, and FAISS for semantic search and knowledge retrieval.",
-        "**Fine-tuning & Optimization:** Experience with model fine-tuning and response optimization for specific use cases."
-      ]
-    }
-  ],
+  "aiProjects": {
+    "title": "AI & Intelligent Agents",
+    "sections": [
+      {
+        "heading": "AI Agent Development",
+        "details": [
+          "Engineered autonomous agents with advanced reasoning and planning capabilities.",
+          "Integrated LangChain and LangGraph for complex agentic workflows.",
+          "Developed and deployed Retrieval-Augmented Generation (RAG) systems for enhanced knowledge retrieval.",
+          "Designed and implemented multi-agent collaborative systems for intricate problem-solving."
+        ],
+        "techs": ["LangChain", "LangGraph", "Python", "RAG Systems", "Autonomous Agents"]
+      },
+      {
+        "heading": "LLM-Powered Applications",
+        "details": [
+          "Seamlessly integrated OpenAI APIs and other LLMs into various applications.",
+          "Expert in prompt engineering crafting effective prompts for optimal LLM performance.",
+          "Utilized vector databases (Pinecone Chroma FAISS) for efficient semantic search and context management.",
+          "Gained experience in model fine-tuning and optimization for specific domain tasks."
+        ],
+        "techs": ["OpenAI APIs", "Prompt Engineering", "Vector Databases", "LLMs", "Python"]
+      }
+    ]
+  },
   "projects": [
     {
       "title": "Enterprise eProcurement System",
@@ -248,7 +247,7 @@
   ],
   "technicalSkills": [
     {
-      "title": "Languages & Frontend",
+      "category": "Languages & Frontend",
       "icon": "Terminal",
       "skills": [
         { "name": "Java", "level": 95, "color": "from-orange-500 to-red-600" },
@@ -262,7 +261,7 @@
       ]
     },
     {
-      "title": "Backend & Frameworks",
+      "category": "Backend & Frameworks",
       "icon": "Server",
       "skills": [
         { "name": "Spring Boot", "level": 95, "color": "from-green-500 to-emerald-600" },
@@ -273,7 +272,7 @@
       ]
     },
     {
-      "title": "Data & Search",
+      "category": "Data & Search",
       "icon": "Database",
       "skills": [
         { "name": "MySQL (RDBMS)", "level": 92, "color": "from-blue-600 to-cyan-600" },
@@ -282,7 +281,7 @@
       ]
     },
     {
-      "title": "CI/CD & DevOps",
+      "category": "CI/CD & DevOps",
       "icon": "Zap",
       "skills": [
         { "name": "Docker", "level": 88, "color": "from-blue-400 to-sky-600" },
@@ -292,7 +291,7 @@
       ]
     },
     {
-      "title": "Testing & Security",
+      "category": "Testing & Security",
       "icon": "ShieldCheck",
       "skills": [
         { "name": "Selenium (UI Auto)", "level": 90, "color": "from-green-500 to-teal-600" },
@@ -302,7 +301,7 @@
       ]
     },
     {
-      "title": "Tools & IDEs",
+      "category": "Tools & IDEs",
       "icon": "Terminal",
       "skills": [
         { "name": "IntelliJ IDEA", "level": 95, "color": "from-purple-500 to-pink-500" },
@@ -315,7 +314,7 @@
       ]
     },
     {
-      "title": "AI & Machine Learning",
+      "category": "AI & Machine Learning",
       "icon": "Brain",
       "skills": [
         { "name": "AI Agents Development", "level": 85, "color": "from-violet-500 to-purple-600" },

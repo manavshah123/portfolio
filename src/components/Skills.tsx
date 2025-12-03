@@ -107,7 +107,7 @@ const Skills = () => {
                   <h3 className={`text-lg font-semibold truncate ${
                     theme === 'dark' ? 'text-white' : 'text-slate-800'
                   }`}>
-                    {skillGroup.title}
+                    {skillGroup.category}
                   </h3>
                 </div>
 

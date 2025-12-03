@@ -6,25 +6,7 @@ import { useTheme } from '../hooks/useTheme'
 const AIProjects = () => {
   const theme = useTheme()
   
-  const iconMap: Record<string, React.ElementType> = {
-    Brain,
-    Bot
-  }
-  
-  const aiProjects = portfolioData.aiProjects.map((project: any) => ({
-    ...project,
-    icon: iconMap[project.icon]
-  }))
-
-  const parseText = (text: string) => {
-    const parts = text.split(/(\*\*.*?\*\*)/g)
-    return parts.map((part, i) => {
-      if (part.startsWith('**') && part.endsWith('**')) {
-        return <strong key={i}>{part.slice(2, -2)}</strong>
-      }
-      return part
-    })
-  }
+  const aiProjectsData = portfolioData.aiProjects
 
   return (
     <motion.section
@@ -44,7 +26,7 @@ const AIProjects = () => {
         }`}
       >
         <Sparkles className="w-6 h-6 mr-2" />
-        🤖 AI & Intelligent Agents
+        🤖 {aiProjectsData.title}
       </motion.h2>
 
       <p className={`text-sm mb-6 italic ${
@@ -54,13 +36,13 @@ const AIProjects = () => {
       </p>
 
       <div className="space-y-6">
-        {aiProjects.map((project: any, projectIndex: number) => (
+        {aiProjectsData.sections.map((section: any, sectionIndex: number) => (
           <motion.div
-            key={projectIndex}
+            key={sectionIndex}
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: projectIndex * 0.2 }}
+            transition={{ duration: 0.5, delay: sectionIndex * 0.2 }}
             className={`p-5 rounded-lg ${
               theme === 'dark'
                 ? 'bg-[#161E2E] border border-orange-500/20'
@@ -68,19 +50,25 @@ const AIProjects = () => {
             }`}
           >
             <div className="flex items-start gap-4 mb-4">
-              <div className={`p-3 rounded-lg bg-gradient-to-br ${project.gradient} shadow-lg`}>
-                <project.icon className="w-6 h-6 text-white" />
+              <div className={`p-3 rounded-lg bg-gradient-to-br ${
+                sectionIndex === 0 ? 'from-violet-500 to-purple-600' : 'from-cyan-500 to-blue-600'
+              } shadow-lg`}>
+                {sectionIndex === 0 ? (
+                  <Brain className="w-6 h-6 text-white" />
+                ) : (
+                  <Bot className="w-6 h-6 text-white" />
+                )}
               </div>
               
               <div className="flex-1">
                 <h3 className={`text-xl font-bold mb-2 ${
                   theme === 'dark' ? 'text-white' : 'text-slate-800'
                 }`}>
-                  {project.title}
+                  {section.heading}
                 </h3>
                 
                 <div className="flex flex-wrap gap-2 mb-3">
-                  {project.techs.map((tech: string, techIndex: number) => (
+                  {section.techs.map((tech: string, techIndex: number) => (
                     <span
                       key={techIndex}
                       className={`px-3 py-1 text-xs font-semibold rounded-full ${
@@ -99,9 +87,9 @@ const AIProjects = () => {
             <ul className={`space-y-2 text-sm ${
               theme === 'dark' ? 'text-slate-400' : 'text-slate-600'
             }`}>
-              {project.highlights.map((highlight: string, index: number) => (
+              {section.details.map((detail: string, index: number) => (
                 <li key={index} className="pl-4 border-l-2 border-orange-500/30">
-                  {parseText(highlight)}
+                  {detail}
                 </li>
               ))}
             </ul>
@@ -125,14 +113,11 @@ const AIProjects = () => {
           <Zap className={`w-5 h-5 ${
             theme === 'dark' ? 'text-orange-400' : 'text-orange-600'
           }`} />
-          <span className={`font-semibold ${
+          <span className={`text-sm font-medium ${
             theme === 'dark' ? 'text-orange-300' : 'text-orange-700'
           }`}>
-            Actively Learning & Building in the AI Space
+            Actively building AI-powered solutions
           </span>
-          <Zap className={`w-5 h-5 ${
-            theme === 'dark' ? 'text-orange-400' : 'text-orange-600'
-          }`} />
         </div>
       </motion.div>
     </motion.section>
