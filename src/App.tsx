@@ -10,6 +10,7 @@ import Achievements from './components/Achievements'
 import AIProjects from './components/AIProjects'
 import SkillProgress from './components/SkillProgress'
 import { fetchPortfolioData, PortfolioData, isGoogleSheetsConfigured, clearCache } from './services/portfolioService'
+import profilePhoto from './image/IMG_8953.jpg'
 
 function App() {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark')
@@ -123,12 +124,9 @@ function App() {
             <div className="flex items-center">
               <div className="w-24 h-24 rounded-full mr-6 overflow-hidden flex items-center justify-center border-4 border-orange-500 shadow-lg">
                 <img
-                  src={portfolioData.personalInfo.photo}
+                  src={profilePhoto}
                   alt={portfolioData.personalInfo.name}
                   className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.currentTarget.src = 'https://placehold.co/100x100/FF9900/FFFFFF?text=MS'
-                  }}
                 />
               </div>
               <div>
