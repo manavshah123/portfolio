@@ -136,6 +136,8 @@
       "period": "Jan 2022 - Present",
       "responsibilities": [
         "**Leadership & Mentorship:** Led the development team, overseeing task assignment, monitoring progress, and ensuring seamless collaboration across project phases.",
+        "**Core Feature Development & Support:** Worked on main features and support for both frontend and backend systems, delivering end-to-end solutions that enhanced user experience and system reliability.",
+        "**Mobile Application Development:** Developed and maintained mobile applications for **Android and iOS** platforms using **Kotlin, Java, and Swift**, ensuring cross-platform compatibility and optimal performance.",
         "**DevOps Integration:** Integrated **Docker, Jenkins, Apache Solr, and Snyk** to establish robust CI/CD and security scanning, significantly boosting deployment efficiency and code quality.",
         "**Modernization:** Successfully drove the migration of core projects to updated **Java and Spring Boot** versions, resulting in performance gains and reduced technical debt.",
         "**Client & Production Support:** Served as a primary contact for production issues, collaborating directly with clients to provide prompt resolutions and maintain system uptime.",
@@ -148,49 +150,113 @@
       "icon": "Trophy",
       "title": "Team Leader",
       "description": "Led development teams across multiple projects",
-      "color": "from-yellow-500 to-orange-500"
+      "color": "from-yellow-500 to-orange-500",
+      "details": [
+        "Managed cross-functional teams of 5+ developers",
+        "Conducted code reviews and mentorship sessions",
+        "Coordinated sprint planning and task allocation",
+        "Ensured on-time delivery of project milestones"
+      ],
+      "highlights": ["Team Management", "Agile/Scrum", "Mentorship", "Code Reviews"],
+      "relatedProjects": "Enterprise eProcurement System"
     },
     {
       "icon": "Target",
       "title": "Full Stack Expert",
       "description": "Mastered both frontend and backend technologies",
-      "color": "from-blue-500 to-cyan-500"
+      "color": "from-blue-500 to-cyan-500",
+      "details": [
+        "Built complete end-to-end solutions from database to UI",
+        "Developed RESTful APIs with Spring Boot",
+        "Created responsive UIs with Angular and React",
+        "Implemented complex business logic and data flows"
+      ],
+      "highlights": ["Java/Spring Boot", "Angular", "React", "REST APIs", "Database Design"],
+      "relatedProjects": "Enterprise eProcurement System and Multi-Platform Apps"
     },
     {
       "icon": "Zap",
       "title": "DevOps Pioneer",
       "description": "Implemented CI/CD pipelines from scratch",
-      "color": "from-purple-500 to-pink-500"
+      "color": "from-purple-500 to-pink-500",
+      "details": [
+        "Set up automated CI/CD pipelines using Jenkins",
+        "Containerized applications with Docker",
+        "Integrated security scanning with Snyk",
+        "Managed cloud deployments on Azure"
+      ],
+      "highlights": ["Docker", "Jenkins", "Azure", "Snyk", "Git"],
+      "relatedProjects": "Enterprise eProcurement System"
     },
     {
       "icon": "Star",
       "title": "Multi-Platform Dev",
       "description": "5+ platforms including iOS, Android, CTV",
-      "color": "from-green-500 to-teal-500"
+      "color": "from-green-500 to-teal-500",
+      "details": [
+        "Built applications for Android, iOS, Roku, Fire TV, and Apple TV",
+        "Used Kotlin, Java, Swift, and BrightScript",
+        "Implemented OMID library for ad tech compliance",
+        "Developed cross-platform compatible solutions"
+      ],
+      "highlights": ["Android", "iOS", "Roku TV", "Fire TV", "Apple TV", "Swift", "Kotlin"],
+      "relatedProjects": "IAS OMID Multi-Platform Test Harness"
     },
     {
       "icon": "Shield",
       "title": "Quality Champion",
       "description": "40% reduction in manual testing effort",
-      "color": "from-red-500 to-rose-500"
+      "color": "from-red-500 to-rose-500",
+      "details": [
+        "Developed comprehensive Selenium test suites",
+        "Reduced manual testing effort by 40%",
+        "Implemented unit tests with JUnit and Mockito",
+        "Established quality gates in CI/CD pipeline"
+      ],
+      "highlights": ["Selenium", "JUnit", "Mockito", "Test Automation", "Quality Assurance"],
+      "relatedProjects": "Enterprise eProcurement System"
     },
     {
       "icon": "Sparkles",
       "title": "Innovation Driver",
       "description": "Modernized legacy systems to latest tech",
-      "color": "from-indigo-500 to-violet-500"
+      "color": "from-indigo-500 to-violet-500",
+      "details": [
+        "Led migration to updated Java and Spring Boot versions",
+        "Introduced Apache Solr for high-performance search",
+        "Implemented modern development practices",
+        "Drove adoption of containerization and DevOps"
+      ],
+      "highlights": ["Java Migration", "Apache Solr", "Modern Architecture", "Best Practices"],
+      "relatedProjects": "Enterprise eProcurement System"
     },
     {
       "icon": "Brain",
       "title": "AI Agent Developer",
       "description": "Building intelligent autonomous agents",
-      "color": "from-violet-500 to-fuchsia-500"
+      "color": "from-violet-500 to-fuchsia-500",
+      "details": [
+        "Engineered autonomous agents with advanced reasoning",
+        "Integrated LangChain and LangGraph for workflows",
+        "Developed RAG systems for knowledge retrieval",
+        "Built multi-agent collaborative systems"
+      ],
+      "highlights": ["LangChain", "LangGraph", "RAG Systems", "Autonomous Agents", "Python"],
+      "relatedProjects": "AI Projects and Intelligent Agents"
     },
     {
       "icon": "Bot",
       "title": "LLM Integration",
       "description": "Expert in OpenAI & LangChain ecosystems",
-      "color": "from-cyan-500 to-blue-500"
+      "color": "from-cyan-500 to-blue-500",
+      "details": [
+        "Integrated OpenAI APIs into applications",
+        "Expert in prompt engineering techniques",
+        "Utilized vector databases for semantic search",
+        "Experience in model fine-tuning for specific tasks"
+      ],
+      "highlights": ["OpenAI APIs", "Prompt Engineering", "Vector Databases", "LLM Integration"],
+      "relatedProjects": "LLM-Powered Applications"
     }
   ],
   "aiProjects": {
