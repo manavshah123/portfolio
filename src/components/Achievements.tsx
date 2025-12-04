@@ -32,7 +32,7 @@ const getGradientColors = (colorClass: string): { from: string; to: string } => 
   return { from: '#f97316', to: '#ea580c' }
 }
 
-interface Achievement {
+interface AchievementData {
   icon: string
   title: string
   description: string
@@ -42,13 +42,23 @@ interface Achievement {
   relatedProjects?: string
 }
 
+interface AchievementWithIcon {
+  icon: React.ElementType
+  title: string
+  description: string
+  color: string
+  details?: string[]
+  highlights?: string[]
+  relatedProjects?: string
+}
+
 interface AchievementsProps {
-  achievementsData: Achievement[]
+  achievementsData: AchievementData[]
 }
 
 const Achievements = ({ achievementsData }: AchievementsProps) => {
   const theme = useTheme()
-  const [selectedAchievement, setSelectedAchievement] = useState<Achievement & { icon: React.ElementType } | null>(null)
+  const [selectedAchievement, setSelectedAchievement] = useState<AchievementWithIcon | null>(null)
   
   const iconMap: Record<string, React.ElementType> = {
     Trophy,
@@ -61,12 +71,12 @@ const Achievements = ({ achievementsData }: AchievementsProps) => {
     Bot
   }
   
-  const achievements = achievementsData.map((achievement: Achievement) => ({
+  const achievements: AchievementWithIcon[] = achievementsData.map((achievement) => ({
     ...achievement,
     icon: iconMap[achievement.icon] || Star
   }))
 
-  const handleCardClick = (achievement: Achievement & { icon: React.ElementType }) => {
+  const handleCardClick = (achievement: AchievementWithIcon) => {
     setSelectedAchievement(achievement)
   }
 
