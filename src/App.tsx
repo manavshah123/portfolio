@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
-import { Sun, Moon, Mail, Phone, Linkedin, Github, Loader2, RefreshCw } from 'lucide-react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Sun, Moon, Mail, Phone, Linkedin, Github, Loader2, RefreshCw, X } from 'lucide-react'
 import Stats from './components/Stats'
 import Skills from './components/Skills'
 import Education from './components/Education'
@@ -17,6 +17,7 @@ function App() {
   const [portfolioData, setPortfolioData] = useState<PortfolioData | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [showPhotoPreview, setShowPhotoPreview] = useState(false)
   
   const iconMap: Record<string, React.ElementType> = {
     email: Mail,
@@ -122,11 +123,15 @@ function App() {
         }`}>
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
             <div className="flex items-center">
-              <div className="w-24 h-24 rounded-full mr-6 overflow-hidden flex items-center justify-center border-4 border-orange-500 shadow-lg">
+              <div 
+                onClick={() => setShowPhotoPreview(true)}
+                className="w-24 h-24 rounded-full mr-6 overflow-hidden flex items-center justify-center border-4 border-orange-500 shadow-lg cursor-pointer hover:border-orange-400 hover:shadow-orange-500/30 hover:shadow-xl transition-all duration-300 group"
+              >
                 <img
                   src={profilePhoto}
                   alt={portfolioData.personalInfo.name}
-                  className="w-full h-full object-cover"
+                  className="w-[150%] h-[150%] object-cover object-top scale-110 group-hover:scale-125 transition-transform duration-300"
+                  style={{ objectPosition: 'center 15%' }}
                 />
               </div>
               <div>
@@ -294,6 +299,52 @@ function App() {
           </p>
         </footer>
       </div>
+
+      {/* Photo Preview Modal */}
+      <AnimatePresence>
+        {showPhotoPreview && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setShowPhotoPreview(false)}
+            className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.5 }}
+              transition={{ type: 'spring', damping: 25, stiffness: 300 }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative max-w-md w-full"
+            >
+              {/* Close button */}
+              <button
+                onClick={() => setShowPhotoPreview(false)}
+                className="absolute -top-12 right-0 p-2 rounded-full bg-white/20 hover:bg-white/30 transition-colors z-10"
+              >
+                <X className="w-6 h-6 text-white" />
+              </button>
+
+              {/* Photo */}
+              <div className="rounded-2xl overflow-hidden border-4 border-orange-500 shadow-2xl shadow-orange-500/20">
+                <img
+                  src={profilePhoto}
+                  alt={portfolioData.personalInfo.name}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+
+              {/* Name badge */}
+              <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 px-6 py-2 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full shadow-lg">
+                <p className="text-white font-bold text-lg whitespace-nowrap">
+                  {portfolioData.personalInfo.name}
+                </p>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   )
 }
