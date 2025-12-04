@@ -71,7 +71,7 @@ interface SkillsProps {
 
 const Skills = ({ technicalSkillsData }: SkillsProps) => {
   const theme = useTheme()
-  const [expandedGroup, setExpandedGroup] = useState<number | null>(null)
+  const [expandedGroup, setExpandedGroup] = useState<number | null>(0) // Open first category by default
   
   const iconMap: Record<string, React.ElementType> = {
     Terminal,
