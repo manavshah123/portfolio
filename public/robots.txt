@@ -1,0 +1,25 @@
+# Robots.txt for Manav Shah Portfolio
+# https://manavshah.vercel.app
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://manavshah.vercel.app/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Allow all search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
