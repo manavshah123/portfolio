@@ -1,135 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Primary Meta Tags -->
-    <title>Manav Shah | Software Engineer | Full Stack & Multi-Platform Developer</title>
-    <meta name="title" content="Manav Shah | Software Engineer | Full Stack & Multi-Platform Developer" />
-    <meta name="description" content="Manav Shah - Software Engineer from Pune, India. Expert in Java, Spring Boot, Angular, React, Kotlin, Swift. Full Stack Developer with 3.5+ years experience at Wishtree Technologies. Specializing in Mobile Development (Android/iOS), DevOps (Docker, Jenkins), AI/ML, and Enterprise Applications. Contact: manav.march12@gmail.com" />
-    <meta name="keywords" content="Manav Shah, Manav Shah Software Engineer, Manav Shah Developer, Manav Shah Pune, Manav Shah Portfolio, Manav Shah Java, Manav Shah Wishtree, Software Engineer, Full Stack Developer, Java Developer, Spring Boot Developer, Angular Developer, React Developer, Kotlin Developer, Swift Developer, Mobile App Developer, Android Developer, iOS Developer, DevOps Engineer, AI Developer, LangChain Developer, Web Developer, Pune Developer, India Software Engineer, Wishtree Technologies, manav.march12@gmail.com" />
+    <title>Manav Shah — Java &amp; Full-Stack Software Engineer in Pune</title>
+    <meta name="description" content="Manav Shah is a software engineer in Pune, India, at Wishtree Technologies. Enterprise Java migrations (Java 17, Jakarta EE 10, Spring 6), security fixes, CI/CD, and full-stack apps with React, Angular and AI." />
     <meta name="author" content="Manav Shah" />
     <meta name="robots" content="index, follow" />
-    <meta name="language" content="English" />
-    <meta name="revisit-after" content="7 days" />
-    
-    <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="Hav_4oFc-_btu12wHdPZbgFfSjYfxXXM1ChSB0uC2Yo" />
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://manavportfolio-pearl.vercel.app" />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://manavportfolio-pearl.vercel.app" />
-    <meta property="og:title" content="Manav Shah | Software Engineer | Full Stack & Multi-Platform Developer" />
-    <meta property="og:description" content="Experienced Software Engineer specializing in Full Stack Development, Java, Spring Boot, Angular, React, Mobile Development, DevOps, and AI/ML. Building enterprise applications and multi-platform solutions." />
+    <link rel="canonical" href="https://manavportfolio-pearl.vercel.app/" />
+    <meta name="theme-color" content="#e9eef2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e1522" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <script>
+      // Pick the theme before first paint so dark-mode visitors never see a light flash.
+      (function () {
+        var saved = null;
+        try { saved = localStorage.getItem('theme'); } catch (e) {}
+        var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+      })();
+    </script>
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Manav Shah" />
+    <meta property="og:title" content="Manav Shah — Java &amp; Full-Stack Software Engineer" />
+    <meta property="og:description" content="Enterprise Java migrations, security fixes, CI/CD, and full-stack apps with React, Angular and AI." />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:url" content="https://manavportfolio-pearl.vercel.app/" />
     <meta property="og:image" content="https://manavportfolio-pearl.vercel.app/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:site_name" content="Manav Shah Portfolio" />
-    <meta property="og:locale" content="en_US" />
-    
-    <!-- Twitter -->
+    <meta property="og:image:alt" content="Manav Shah, software engineer: I keep enterprise Java secure, current and shipping." />
+    <meta property="profile:first_name" content="Manav" />
+    <meta property="profile:last_name" content="Shah" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://manavportfolio-pearl.vercel.app" />
-    <meta name="twitter:title" content="Manav Shah | Software Engineer | Full Stack & Multi-Platform Developer" />
-    <meta name="twitter:description" content="Experienced Software Engineer specializing in Full Stack Development, Java, Spring Boot, Angular, React, Mobile Development, DevOps, and AI/ML." />
+    <meta name="twitter:title" content="Manav Shah — Java &amp; Full-Stack Software Engineer" />
+    <meta name="twitter:description" content="Enterprise Java migrations, security fixes, CI/CD, and full-stack apps with React, Angular and AI." />
     <meta name="twitter:image" content="https://manavportfolio-pearl.vercel.app/og-image.jpg" />
-    <meta name="twitter:creator" content="@manavshah" />
-    
-    <!-- Additional SEO Meta Tags -->
-    <meta name="geo.region" content="IN-MH" />
-    <meta name="geo.placename" content="Pune, India" />
-    <meta name="classification" content="Portfolio, Software Engineer, Developer" />
-    <meta name="subject" content="Software Engineering Portfolio" />
-    <meta name="rating" content="General" />
-    
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#f97316" />
-    <meta name="msapplication-TileColor" content="#f97316" />
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    
-    <!-- Preconnect for Performance -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Manav Shah",
+        "url": "https://manavportfolio-pearl.vercel.app/",
+        "image": "https://manavportfolio-pearl.vercel.app/manav-large.jpg",
+        "jobTitle": "Software Engineer",
+        "worksFor": { "@type": "Organization", "name": "Wishtree Technologies" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressCountry": "IN" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Ganpat University" },
+        "knowsAbout": ["Java", "Spring Boot", "Jakarta EE", "Hibernate", "Angular", "React", "Node.js", "Jenkins", "Docker", "Application security"],
+        "sameAs": ["https://www.linkedin.com/in/manavushah/", "https://github.com/manavshah123"]
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    <!-- JSON-LD Structured Data for Google Rich Snippets -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Manav Shah",
-      "url": "https://manavportfolio-pearl.vercel.app",
-      "image": "https://manavportfolio-pearl.vercel.app/og-image.jpg",
-      "sameAs": [
-        "https://linkedin.com/in/manavushah",
-        "https://github.com/manavshah123"
-      ],
-      "jobTitle": "Software Engineer",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Wishtree Technologies LLP"
-      },
-      "description": "Experienced Software Engineer specializing in Full Stack Development, Java, Spring Boot, Angular, React, Mobile Development (Android/iOS), DevOps, and AI/ML.",
-      "knowsAbout": [
-        "Java", "Spring Boot", "Angular", "React", "Kotlin", "Swift",
-        "Android Development", "iOS Development", "Docker", "Jenkins",
-        "MySQL", "MongoDB", "Apache Solr", "AI Agents", "LangChain",
-        "DevOps", "Full Stack Development", "Mobile Development"
-      ],
-      "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "Ganpat University"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Pune",
-        "addressRegion": "Maharashtra",
-        "addressCountry": "India"
-      },
-      "email": "manav.march12@gmail.com",
-      "telephone": "+91-7016455160"
-    }
-    </script>
-    
-    <!-- Website Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Manav Shah Portfolio",
-      "url": "https://manavportfolio-pearl.vercel.app",
-      "description": "Portfolio website of Manav Shah - Software Engineer",
-      "author": {
-        "@type": "Person",
-        "name": "Manav Shah"
-      }
-    }
-    </script>
-    
-    <!-- Professional Service Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Manav Shah - Software Development Services",
-      "description": "Full Stack Development, Mobile App Development, DevOps, and AI Solutions",
-      "provider": {
-        "@type": "Person",
-        "name": "Manav Shah"
-      },
-      "areaServed": "Worldwide",
-      "serviceType": ["Software Development", "Web Development", "Mobile App Development", "DevOps", "AI Development"]
-    }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;600&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
